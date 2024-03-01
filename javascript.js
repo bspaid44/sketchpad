@@ -6,3 +6,8 @@ for (let i = 0; i < (64 * 64) - 1; i++) {
     mainContainer.appendChild(gridItem);
 };
 
+document.addEventListener('mouseover', function () {
+    if(event.target.classList.contains('grid-items')) {
+        event.target.classList.toggle('highlight')
+    }
+}) 
